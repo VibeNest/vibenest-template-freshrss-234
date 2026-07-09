@@ -5,7 +5,7 @@ This is a thin VibeNest-ready deploy adapter for [FreshRSS](https://github.com/F
 It does not fork or modify FreshRSS. The repo only provides explicit Docker defaults:
 
 - official image: `freshrss/freshrss:latest`
-- app port: `80`
+- app port: `80` (`80:80` in compose so Coolify can bind the VibeNest domain to the service)
 - persistent data and extensions volumes
 - feed refresh cron enabled
 
