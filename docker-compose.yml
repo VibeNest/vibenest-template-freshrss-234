@@ -12,11 +12,6 @@ services:
     volumes:
       - freshrss-data:/var/www/FreshRSS/data
       - freshrss-extensions:/var/www/FreshRSS/extensions
-    healthcheck:
-      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1/i/ >/dev/null || exit 1"]
-      interval: 30s
-      timeout: 5s
-      retries: 5
 
 volumes:
   freshrss-data:

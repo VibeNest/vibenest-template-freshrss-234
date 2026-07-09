@@ -8,6 +8,7 @@ It does not fork or modify FreshRSS. The repo only provides explicit Docker defa
 - app port: `80` (`80:80` in compose so Coolify can bind the VibeNest domain to the service)
 - persistent data and extensions volumes
 - feed refresh cron enabled
+- no container-level healthcheck; the FreshRSS setup flow can make simple path checks misleading, so VibeNest validates readiness through the public URL smoke.
 
 ## VibeNest notes
 
